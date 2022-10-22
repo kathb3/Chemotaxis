@@ -8,16 +8,16 @@ void draw() {
   background(0);
   ellipse(x,y,40,40);
   if (x < mouseX){
-    x = x + random(-4,6);
+    x = x + (int)(Math.random()*5)-1;
   }
   else{
-    x = x + random(-6,4);
+    x = x + (int)(Math.random()*5)-3;
   }
-  if (y < mouseY){
-    y = y + random(-4,6);
+  if (y > mouseY){
+    y = y + (int)(Math.random()*5)-3;
   }
   else{
-    y = y + random(-6,4);
+    y = y + (int)(Math.random()*5)-1;
   }
   if (mousePressed == true){
     x = 250;
